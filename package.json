@@ -1,0 +1,12 @@
+{
+  "name": "meeting-to-demo-orchestrator",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "packages/integrations/*"
+  ],
+  "devDependencies": {
+    "typescript": "^5.5.4"
+  }
+}
