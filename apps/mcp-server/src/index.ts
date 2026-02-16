@@ -1,7 +1,7 @@
 import path from "node:path";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
-import { Server } from "@modelcontextprotocol/sdk/server/index.js";
-import { z } from "@modelcontextprotocol/sdk/shared/zod.js";
+import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
+import { z } from "zod";
 
 import { FeatureBrief, GateName } from "@m2d/schemas";
 import { FsRunStore, newRunId, nowIso } from "@m2d/core";
@@ -15,10 +15,10 @@ function log(...args: any[]) {
 const RUNS_DIR = process.env.RUNS_DIR ?? path.join(process.cwd(), "runs");
 const store = new FsRunStore(RUNS_DIR);
 
-const server = new Server(
-    { name: "meeting-to-demo-orchestrator", version: "0.0.1" },
-    { capabilities: { tools: {} } }
-);
+const server = new McpServer({
+    name: "meeting-to-demo-orchestrator",
+    version: "0.0.1"
+});
 
 /**
  * Tool: start_run
