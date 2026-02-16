@@ -1,0 +1,16 @@
+{
+    "name": "@m2d/mcp-server",
+    "version": "0.0.1",
+    "private": true,
+    "type": "module",
+    "main": "dist/index.js",
+    "scripts": {
+        "build": "tsc -p tsconfig.json",
+        "start": "node dist/index.js"
+    },
+    "dependencies": {
+        "@modelcontextprotocol/sdk": "^1.26.0",
+        "@m2d/schemas": "0.0.1",
+        "@m2d/core": "0.0.1"
+    }
+}
