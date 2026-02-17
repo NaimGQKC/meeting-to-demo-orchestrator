@@ -1,13 +1,13 @@
 {
-    "name": "@meeting-to-demo/schemas",
+    "name": "@meeting-to-demo/adapters",
     "version": "0.0.1",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "scripts": {
-        "build": "tsc",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "build": "tsc"
     },
     "dependencies": {
+        "@meeting-to-demo/schemas": "*",
         "zod": "^3.22.4"
     },
     "devDependencies": {

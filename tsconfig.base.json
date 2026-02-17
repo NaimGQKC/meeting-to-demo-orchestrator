@@ -3,10 +3,12 @@
         "target": "ES2022",
         "module": "NodeNext",
         "moduleResolution": "NodeNext",
-        "strict": true,
         "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "strict": true,
         "skipLibCheck": true,
-        "resolveJsonModule": true,
-        "declaration": true
+        "sourceMap": true,
+        "declaration": true,
+        "declarationMap": true
     }
 }
