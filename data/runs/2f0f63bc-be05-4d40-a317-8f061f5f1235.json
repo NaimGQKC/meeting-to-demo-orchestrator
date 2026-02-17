@@ -1,0 +1,20 @@
+{
+  "runId": "2f0f63bc-be05-4d40-a317-8f061f5f1235",
+  "featureBrief": {
+    "meetingId": "direct-input",
+    "meetingDate": "2026-02-17T05:27:05.049Z",
+    "features": [
+      {
+        "id": "5ea5a82c-b7f0-45ea-be1b-36c7faa9d905",
+        "title": "Add a dark mode toggle to the dashboard with user preference saved in localStora",
+        "description": "Add a dark mode toggle to the dashboard with user preference saved in localStorage. Design should be sleek.",
+        "priority": "high"
+      }
+    ],
+    "context": "Add a dark mode toggle to the dashboard with user preference saved in localStorage. Design should be sleek."
+  },
+  "approvals": [],
+  "status": "in-progress",
+  "createdAt": "2026-02-17T05:27:05.049Z",
+  "updatedAt": "2026-02-17T05:27:05.049Z"
+}

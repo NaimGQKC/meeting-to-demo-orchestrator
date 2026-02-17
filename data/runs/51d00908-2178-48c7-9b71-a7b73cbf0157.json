@@ -1,0 +1,20 @@
+{
+  "runId": "51d00908-2178-48c7-9b71-a7b73cbf0157",
+  "featureBrief": {
+    "meetingId": "123",
+    "meetingDate": "2026-02-17T01:42:14.893Z",
+    "features": [
+      {
+        "id": "3dd7e01a-3188-4bbf-b284-3cc8d845c189",
+        "title": "Meeting: Test",
+        "description": "No specific features or action items found, but meeting processed.",
+        "priority": "low"
+      }
+    ],
+    "context": "Manual Input"
+  },
+  "approvals": [],
+  "status": "pending",
+  "createdAt": "2026-02-17T01:42:14.894Z",
+  "updatedAt": "2026-02-17T01:42:14.894Z"
+}

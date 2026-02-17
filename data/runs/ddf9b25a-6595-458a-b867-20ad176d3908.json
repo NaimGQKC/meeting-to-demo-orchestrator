@@ -1,0 +1,20 @@
+{
+  "runId": "ddf9b25a-6595-458a-b867-20ad176d3908",
+  "featureBrief": {
+    "meetingId": "meeting-123",
+    "meetingDate": "2026-02-17T00:50:55.959Z",
+    "features": [
+      {
+        "id": "feat-1",
+        "title": "Mock Feature Request",
+        "description": "A mock feature request from a meeting.",
+        "priority": "medium"
+      }
+    ],
+    "context": "Initial mock context"
+  },
+  "approvals": [],
+  "status": "pending",
+  "createdAt": "2026-02-17T00:50:55.973Z",
+  "updatedAt": "2026-02-17T00:50:55.973Z"
+}

@@ -1,0 +1,85 @@
+{
+  "runId": "e1836bee-cdc2-410c-8d70-bf6f69aed5f2",
+  "featureBrief": {
+    "meetingId": "meeting-123",
+    "meetingDate": "2026-02-17T00:52:04.992Z",
+    "features": [
+      {
+        "id": "7950cdcd-8585-4bc6-8b27-5e11530c847c",
+        "title": "Mock Feature Request",
+        "description": "A mock feature request from a meeting.",
+        "priority": "medium"
+      }
+    ],
+    "context": "Initial mock context"
+  },
+  "contextPacket": {
+    "accountId": "f1124ab1-1dcc-4a40-8ec4-a7b0e1543467",
+    "projectContext": "Mock project context",
+    "scope": "Mock scope based on Mock Feature Request",
+    "assumptions": [
+      "Assumption 1",
+      "Assumption 2"
+    ],
+    "openQuestions": [
+      "Question 1?"
+    ]
+  },
+  "prd": {
+    "id": "eb9bc408-3e1c-471f-84d4-75ddff5f0a5c",
+    "title": "Mock PRD",
+    "overview": "Generated PRD for Mock scope based on Mock Feature Request",
+    "requirements": [],
+    "acceptanceCriteria": [
+      "AC 1"
+    ],
+    "uiContract": {
+      "screens": []
+    }
+  },
+  "uiContract": {
+    "screens": [
+      {
+        "id": "0b3a2026-e1dc-4b94-a6ad-93e7da520681",
+        "name": "Mock Screen",
+        "route": "/mock",
+        "components": [],
+        "description": "A mock screen."
+      }
+    ]
+  },
+  "fixtures": "export const fixtures = {};",
+  "v0Output": "https://v0.dev/mock-prototype-url",
+  "adaptedOutput": "Mock Adapted Prototype based on https://v0.dev/mock-prototype-url",
+  "approvals": [
+    {
+      "gate": "gate1",
+      "approver": "mock-user",
+      "timestamp": "2026-02-17T00:52:05.020Z",
+      "comments": "Approved features keys: 0"
+    },
+    {
+      "gate": "gate2",
+      "approver": "mock-user",
+      "timestamp": "2026-02-17T00:52:05.029Z"
+    },
+    {
+      "gate": "gate3",
+      "approver": "mock-user",
+      "timestamp": "2026-02-17T00:52:05.033Z"
+    },
+    {
+      "gate": "gate4",
+      "approver": "mock-user",
+      "timestamp": "2026-02-17T00:52:05.040Z"
+    },
+    {
+      "gate": "gate5",
+      "approver": "mock-user",
+      "timestamp": "2026-02-17T00:52:05.043Z"
+    }
+  ],
+  "status": "completed",
+  "createdAt": "2026-02-17T00:52:04.995Z",
+  "updatedAt": "2026-02-17T00:52:05.043Z"
+}

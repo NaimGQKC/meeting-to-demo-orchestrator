@@ -1,13 +1,26 @@
 {
     "name": "@meeting-to-demo/adapters",
     "version": "0.0.1",
+    "type": "module",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/index.js",
+            "default": "./dist/index.js"
+        }
+    },
     "scripts": {
         "build": "tsc"
     },
     "dependencies": {
-        "@meeting-to-demo/schemas": "*",
+        "@meeting-to-demo/schemas": "^0.0.1",
+        "@modelcontextprotocol/sdk": "^1.26.0",
+        "@types/uuid": "^10.0.0",
+        "eventsource": "^4.1.0",
+        "openai": "^6.22.0",
+        "uuid": "^13.0.0",
         "zod": "^3.22.4"
     },
     "devDependencies": {

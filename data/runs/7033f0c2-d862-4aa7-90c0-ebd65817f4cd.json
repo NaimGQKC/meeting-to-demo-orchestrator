@@ -1,0 +1,50 @@
+{
+  "runId": "7033f0c2-d862-4aa7-90c0-ebd65817f4cd",
+  "featureBrief": {
+    "meetingId": "direct-input",
+    "meetingDate": "2026-02-17T05:31:27.439Z",
+    "features": [
+      {
+        "id": "a3650f84-161d-4eb2-8f41-3f387ebdde92",
+        "title": "Add a dark mode toggle to the dashboard with user preference saved in localStora",
+        "description": "Add a dark mode toggle to the dashboard with user preference saved in localStorage. Design should be sleek.",
+        "priority": "high"
+      }
+    ],
+    "context": "Add a dark mode toggle to the dashboard with user preference saved in localStorage. Design should be sleek."
+  },
+  "approvals": [],
+  "status": "awaiting_prd_review",
+  "createdAt": "2026-02-17T05:31:27.439Z",
+  "updatedAt": "2026-02-17T05:31:27.452Z",
+  "contextPacket": {
+    "accountId": "e6ac97d4-8ace-469e-94d5-d2c6413aeb0c",
+    "projectContext": "Add a dark mode toggle to the dashboard with user preference saved in localStorage. Design should be sleek.",
+    "scope": "Add a dark mode toggle to the dashboard with user preference saved in localStora",
+    "assumptions": [],
+    "openQuestions": []
+  },
+  "prd": {
+    "id": "25d0cf64-31a4-4d3a-a4b8-b48ee6d81567",
+    "title": "Mock PRD",
+    "overview": "Generated PRD for Add a dark mode toggle to the dashboard with user preference saved in localStora",
+    "requirements": [],
+    "acceptanceCriteria": [
+      "AC 1"
+    ],
+    "uiContract": {
+      "screens": []
+    }
+  },
+  "uiContract": {
+    "screens": [
+      {
+        "id": "36398698-cbbd-4a55-bf35-ec874536d647",
+        "name": "Mock Screen",
+        "route": "/mock",
+        "components": [],
+        "description": "A mock screen."
+      }
+    ]
+  }
+}

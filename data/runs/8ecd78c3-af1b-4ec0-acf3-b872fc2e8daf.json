@@ -1,0 +1,20 @@
+{
+  "runId": "8ecd78c3-af1b-4ec0-acf3-b872fc2e8daf",
+  "featureBrief": {
+    "meetingId": "direct-input",
+    "meetingDate": "2026-02-17T05:56:43.927Z",
+    "features": [
+      {
+        "id": "be9a702f-8841-43fe-a30e-85a7292b9038",
+        "title": "I want a button that shines everytime you click it",
+        "description": "I want a button that shines everytime you click it",
+        "priority": "high"
+      }
+    ],
+    "context": "I want a button that shines everytime you click it"
+  },
+  "approvals": [],
+  "status": "in-progress",
+  "createdAt": "2026-02-17T05:56:43.927Z",
+  "updatedAt": "2026-02-17T05:56:43.927Z"
+}

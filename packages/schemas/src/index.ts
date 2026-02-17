@@ -101,7 +101,7 @@ export const RunPacketSchema = z.object({
     v0Output: z.string().optional(), // Link or content
     adaptedOutput: z.string().optional(), // Link or diff
     approvals: z.array(RunApprovalSchema),
-    status: z.enum(['pending', 'in-progress', 'completed', 'failed']),
+    status: z.enum(['pending', 'in-progress', 'awaiting_prd_review', 'completed', 'failed']),
     createdAt: TimestampSchema,
     updatedAt: TimestampSchema,
 });
