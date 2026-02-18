@@ -1,0 +1,81 @@
+{
+  "runId": "98fbe54e-4a32-4fb1-add3-8cb1ac6031de",
+  "featureBrief": {
+    "meetingId": "direct-input",
+    "meetingDate": "2026-02-18T05:39:48.526Z",
+    "features": [
+      {
+        "id": "59705a7b-9cdd-4a21-82e3-2ab250a1c377",
+        "title": "**Refined Feature Request: Executive Sales & Performance Dashboard**\r\n\r\n**Object",
+        "description": "**Refined Feature Request: Executive Sales & Performance Dashboard**\r\n\r\n**Objective:**\r\nDevelop a high-fidelity executive sales dashboard for Managers to monitor organizational health through team-based side-by-side comparison and longitudinal Year-To-Date (YTD) trend analysis.\r\n\r\n**Core Requirements:**\r\n1. **Primary Metrics (Hero Cards):**\r\n   - **YTD Total Revenue:** Primary financial health indicator.\r\n   - **Sales Velocity:** Count of total sales closed YTD.\r\n2. **Longitudinal Visualizations:**\r\n   - **Revenue Over Time:** A primary **Line Chart** showing revenue trajectories YTD to visualize growth and momentum.\r\n3. **Team Performance Comparison:**\r\n   - **Side-by-Side Analysis:** Ability to compare multiple sales teams' performance concurrently on shared axes.\r\n4. **Filtering & Slicing:**\r\n   - **Regional Filtering:** Global filter to slice the entire dashboard by geographic region.\r\n   - **Default View:** Dashboard must default to **Year-to-Date (YTD)** data upon loading.\r\n\r\n**Design Aesthetic (Ampliwork Style):**\r\n- **Palette:** Midnight Navy (`#020617`) backgrounds with interactive Cyan (`#00A3FF`) highlights.\r\n- **Visual Style:** Glassmorphism card effects, pill-shaped UI elements (`rounded-full`), and high-contrast typography.\r\n- **Experience:** High-density \"Command Center\" layout optimized for desktop and executive briefings.\r\n",
+        "priority": "high"
+      }
+    ],
+    "context": "**Refined Feature Request: Executive Sales & Performance Dashboard**\r\n\r\n**Objective:**\r\nDevelop a high-fidelity executive sales dashboard for Managers to monitor organizational health through team-based side-by-side comparison and longitudinal Year-To-Date (YTD) trend analysis.\r\n\r\n**Core Requirements:**\r\n1. **Primary Metrics (Hero Cards):**\r\n   - **YTD Total Revenue:** Primary financial health indicator.\r\n   - **Sales Velocity:** Count of total sales closed YTD.\r\n2. **Longitudinal Visualizations:**\r\n   - **Revenue Over Time:** A primary **Line Chart** showing revenue trajectories YTD to visualize growth and momentum.\r\n3. **Team Performance Comparison:**\r\n   - **Side-by-Side Analysis:** Ability to compare multiple sales teams' performance concurrently on shared axes.\r\n4. **Filtering & Slicing:**\r\n   - **Regional Filtering:** Global filter to slice the entire dashboard by geographic region.\r\n   - **Default View:** Dashboard must default to **Year-to-Date (YTD)** data upon loading.\r\n\r\n**Design Aesthetic (Ampliwork Style):**\r\n- **Palette:** Midnight Navy (`#020617`) backgrounds with interactive Cyan (`#00A3FF`) highlights.\r\n- **Visual Style:** Glassmorphism card effects, pill-shaped UI elements (`rounded-full`), and high-contrast typography.\r\n- **Experience:** High-density \"Command Center\" layout optimized for desktop and executive briefings.\r\n"
+  },
+  "approvals": [],
+  "status": "awaiting_prd_review",
+  "createdAt": "2026-02-18T05:39:48.527Z",
+  "updatedAt": "2026-02-18T05:39:54.618Z",
+  "contextPacket": {
+    "accountId": "97299cc2-0b8e-4cce-bb02-7295b335c72b",
+    "projectContext": "**Refined Feature Request: Executive Sales & Performance Dashboard**\r\n\r\n**Objective:**\r\nDevelop a high-fidelity executive sales dashboard for Managers to monitor organizational health through team-based side-by-side comparison and longitudinal Year-To-Date (YTD) trend analysis.\r\n\r\n**Core Requirements:**\r\n1. **Primary Metrics (Hero Cards):**\r\n   - **YTD Total Revenue:** Primary financial health indicator.\r\n   - **Sales Velocity:** Count of total sales closed YTD.\r\n2. **Longitudinal Visualizations:**\r\n   - **Revenue Over Time:** A primary **Line Chart** showing revenue trajectories YTD to visualize growth and momentum.\r\n3. **Team Performance Comparison:**\r\n   - **Side-by-Side Analysis:** Ability to compare multiple sales teams' performance concurrently on shared axes.\r\n4. **Filtering & Slicing:**\r\n   - **Regional Filtering:** Global filter to slice the entire dashboard by geographic region.\r\n   - **Default View:** Dashboard must default to **Year-to-Date (YTD)** data upon loading.\r\n\r\n**Design Aesthetic (Ampliwork Style):**\r\n- **Palette:** Midnight Navy (`#020617`) backgrounds with interactive Cyan (`#00A3FF`) highlights.\r\n- **Visual Style:** Glassmorphism card effects, pill-shaped UI elements (`rounded-full`), and high-contrast typography.\r\n- **Experience:** High-density \"Command Center\" layout optimized for desktop and executive briefings.\r\n",
+    "scope": "**Refined Feature Request: Executive Sales & Performance Dashboard**\r\n\r\n**Object",
+    "assumptions": [],
+    "openQuestions": []
+  },
+  "prd": {
+    "id": "64675750-b7ef-4617-939f-3051de64fb81",
+    "title": "PRD: **Refined Feature Request: Executive Sales & Performance Dashboard**\r\n\r\n**Object",
+    "overview": "Product Requirements Document for: **Refined Feature Request: Executive Sales & Performance Dashboard**\r\n\r\n**Object\n\nContext: **Refined Feature Request: Executive Sales & Performance Dashboard**\r\n\r\n**Objective:**\r\nDevelop a high-fidelity executive sales dashboard for Managers to monitor organizational health through team-based side-by-side comparison and longitudinal Year-To-Date (YTD) trend analysis.\r\n\r\n**Core Requirements:**\r\n1. **Primary Metrics (Hero Cards):**\r\n   - **YTD Total Revenue:** Primary financial health indicator.\r\n   - **Sales Velocity:** Count of total sales closed YTD.\r\n2. **Longitudinal Visualizations:**\r\n   - **Revenue Over Time:** A primary **Line Chart** showing revenue trajectories YTD to visualize growth and momentum.\r\n3. **Team Performance Comparison:**\r\n   - **Side-by-Side Analysis:** Ability to compare multiple sales teams' performance concurrently on shared axes.\r\n4. **Filtering & Slicing:**\r\n   - **Regional Filtering:** Global filter to slice the entire dashboard by geographic region.\r\n   - **Default View:** Dashboard must default to **Year-to-Date (YTD)** data upon loading.\r\n\r\n**Design Aesthetic (Ampliwork Style):**\r\n- **Palette:** Midnight Navy (`#020617`) backgrounds with interactive Cyan (`#00A3FF`) highlights.\r\n- **Visual Style:** Glassmorphism card effects, pill-shaped UI elements (`rounded-full`), and high-contrast typography.\r\n- **Experience:** High-density \"Command Center\" layout optimized for desktop and executive briefings.\r\n",
+    "requirements": [
+      {
+        "id": "4e71188e-8459-48e8-bfee-ce9d7ae59e66",
+        "description": "Implement the core feature: **Refined Feature Request: Executive Sales & Performance Dashboard**\r\n\r\n**Object",
+        "priority": "must"
+      },
+      {
+        "id": "c571afec-c274-4280-a137-4492c27b3069",
+        "description": "Ensure responsive design across desktop and mobile",
+        "priority": "must"
+      },
+      {
+        "id": "c092109c-b00e-42f1-8423-bb387eb1b8f2",
+        "description": "Add smooth animations and visual polish",
+        "priority": "should"
+      },
+      {
+        "id": "9387e38c-1962-425e-bac9-38828fdd834a",
+        "description": "Include accessibility support",
+        "priority": "should"
+      }
+    ],
+    "acceptanceCriteria": [
+      "The feature \"**Refined Feature Request: Executive Sales & Performance Dashboard**\r\n\r\n**Object\" works as described",
+      "UI is responsive and visually polished",
+      "No console errors or warnings"
+    ],
+    "uiContract": {
+      "screens": []
+    }
+  },
+  "uiContract": {
+    "screens": [
+      {
+        "id": "f808ef87-728d-4e41-bd41-764029f5d94f",
+        "name": "**Refined Feature Request: Executive Sales & Performance Dashboard**\r\n\r\n**Object",
+        "route": "/",
+        "components": [
+          {
+            "name": "FeatureComponent",
+            "props": {
+              "feature": "**Refined Feature Request: Executive Sales & Performance Dashboard**\r\n\r\n**Object"
+            },
+            "state": {}
+          }
+        ],
+        "description": "Main screen implementing: **Refined Feature Request: Executive Sales & Performance Dashboard**\r\n\r\n**Object"
+      }
+    ]
+  }
+}

@@ -42,8 +42,8 @@ export type ContextPacket = z.infer<typeof ContextPacketSchema>;
 
 export const UIComponentSchema = z.object({
     name: z.string(),
-    props: z.record(z.any()).optional(),
-    state: z.record(z.any()).optional(),
+    props: z.record(z.string(), z.any()).optional(),
+    state: z.record(z.string(), z.any()).optional(),
 });
 
 export const UIScreenSchema = z.object({
@@ -56,8 +56,8 @@ export const UIScreenSchema = z.object({
 
 export const UIContractSchema = z.object({
     screens: z.array(UIScreenSchema),
-    entities: z.record(z.any()).optional(), // Data entities used in UI
-    globalState: z.record(z.any()).optional(),
+    entities: z.record(z.string(), z.any()).optional(), // Data entities used in UI
+    globalState: z.record(z.string(), z.any()).optional(),
 });
 
 export type UIContract = z.infer<typeof UIContractSchema>;

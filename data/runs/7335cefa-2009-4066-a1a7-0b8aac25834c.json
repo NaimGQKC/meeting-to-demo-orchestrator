@@ -1,0 +1,81 @@
+{
+  "runId": "7335cefa-2009-4066-a1a7-0b8aac25834c",
+  "featureBrief": {
+    "meetingId": "direct-input",
+    "meetingDate": "2026-02-18T04:54:52.432Z",
+    "features": [
+      {
+        "id": "0cecb45c-d38a-41fd-80fb-bda003722d4d",
+        "title": "**Refined Feature Request: Executive Sales & Performance Dashboard**\r\n\r\n**Object",
+        "description": "**Refined Feature Request: Executive Sales & Performance Dashboard**\r\n\r\n**Objective:**\r\nDevelop a high-fidelity executive sales dashboard for Managers to monitor organizational health through team-based comparison and longitudinal trend analysis.\r\n\r\n**Core Requirements:**\r\n1. **Primary Metrics (Hero Cards):**\r\n   - **Monthly Total Revenue:** Real-time tracking of gross revenue vs. previous month targets.\r\n   - **Sales Velocity:** Count of total sales closed within the selected period.\r\n2. **Team Comparison Visuals:**\r\n   - **Leaderboard Performance:** Comparative ranking of sales teams by revenue output.\r\n   - **Longitudinal Comparison:** A multi-line chart or stacked area chart showing how teams perform relative to each other over time (Monthly/Quarterly granularity).\r\n3. **Advanced Filtering:**\r\n   - **Regional Slicing:** Ability to filter entire data sets by geographic regions.\r\n   - **Time Dimension:** Toggle between Weekly, Monthly, and Year-to-Date views.\r\n\r\n**Design Aesthetic (Ampliwork Midnight Cyan):**\r\n- **Palette:** Deep Midnight Navy (`#020617`) backgrounds with interactive Cyan (`#00A3FF`) highlights.\r\n- **Glassmorphism:** Use semi-transparent card backgrounds with frosted-glass blur effects.\r\n- **UI Elements:** Use pill-shaped buttons (`rounded-full`) and strict geometric layouts.\r\n- **Data Density:** High-information density with clear visual hierarchy, optimized for dashboard \"Command Center\" viewing.\r\n",
+        "priority": "high"
+      }
+    ],
+    "context": "**Refined Feature Request: Executive Sales & Performance Dashboard**\r\n\r\n**Objective:**\r\nDevelop a high-fidelity executive sales dashboard for Managers to monitor organizational health through team-based comparison and longitudinal trend analysis.\r\n\r\n**Core Requirements:**\r\n1. **Primary Metrics (Hero Cards):**\r\n   - **Monthly Total Revenue:** Real-time tracking of gross revenue vs. previous month targets.\r\n   - **Sales Velocity:** Count of total sales closed within the selected period.\r\n2. **Team Comparison Visuals:**\r\n   - **Leaderboard Performance:** Comparative ranking of sales teams by revenue output.\r\n   - **Longitudinal Comparison:** A multi-line chart or stacked area chart showing how teams perform relative to each other over time (Monthly/Quarterly granularity).\r\n3. **Advanced Filtering:**\r\n   - **Regional Slicing:** Ability to filter entire data sets by geographic regions.\r\n   - **Time Dimension:** Toggle between Weekly, Monthly, and Year-to-Date views.\r\n\r\n**Design Aesthetic (Ampliwork Midnight Cyan):**\r\n- **Palette:** Deep Midnight Navy (`#020617`) backgrounds with interactive Cyan (`#00A3FF`) highlights.\r\n- **Glassmorphism:** Use semi-transparent card backgrounds with frosted-glass blur effects.\r\n- **UI Elements:** Use pill-shaped buttons (`rounded-full`) and strict geometric layouts.\r\n- **Data Density:** High-information density with clear visual hierarchy, optimized for dashboard \"Command Center\" viewing.\r\n"
+  },
+  "approvals": [],
+  "status": "awaiting_prd_review",
+  "createdAt": "2026-02-18T04:54:52.432Z",
+  "updatedAt": "2026-02-18T04:54:59.776Z",
+  "contextPacket": {
+    "accountId": "d6398b44-25e5-4a9b-ac37-60fdbf806641",
+    "projectContext": "**Refined Feature Request: Executive Sales & Performance Dashboard**\r\n\r\n**Objective:**\r\nDevelop a high-fidelity executive sales dashboard for Managers to monitor organizational health through team-based comparison and longitudinal trend analysis.\r\n\r\n**Core Requirements:**\r\n1. **Primary Metrics (Hero Cards):**\r\n   - **Monthly Total Revenue:** Real-time tracking of gross revenue vs. previous month targets.\r\n   - **Sales Velocity:** Count of total sales closed within the selected period.\r\n2. **Team Comparison Visuals:**\r\n   - **Leaderboard Performance:** Comparative ranking of sales teams by revenue output.\r\n   - **Longitudinal Comparison:** A multi-line chart or stacked area chart showing how teams perform relative to each other over time (Monthly/Quarterly granularity).\r\n3. **Advanced Filtering:**\r\n   - **Regional Slicing:** Ability to filter entire data sets by geographic regions.\r\n   - **Time Dimension:** Toggle between Weekly, Monthly, and Year-to-Date views.\r\n\r\n**Design Aesthetic (Ampliwork Midnight Cyan):**\r\n- **Palette:** Deep Midnight Navy (`#020617`) backgrounds with interactive Cyan (`#00A3FF`) highlights.\r\n- **Glassmorphism:** Use semi-transparent card backgrounds with frosted-glass blur effects.\r\n- **UI Elements:** Use pill-shaped buttons (`rounded-full`) and strict geometric layouts.\r\n- **Data Density:** High-information density with clear visual hierarchy, optimized for dashboard \"Command Center\" viewing.\r\n",
+    "scope": "**Refined Feature Request: Executive Sales & Performance Dashboard**\r\n\r\n**Object",
+    "assumptions": [],
+    "openQuestions": []
+  },
+  "prd": {
+    "id": "356da43d-07b6-45df-80b6-1300ea302941",
+    "title": "PRD: **Refined Feature Request: Executive Sales & Performance Dashboard**\r\n\r\n**Object",
+    "overview": "Product Requirements Document for: **Refined Feature Request: Executive Sales & Performance Dashboard**\r\n\r\n**Object\n\nContext: **Refined Feature Request: Executive Sales & Performance Dashboard**\r\n\r\n**Objective:**\r\nDevelop a high-fidelity executive sales dashboard for Managers to monitor organizational health through team-based comparison and longitudinal trend analysis.\r\n\r\n**Core Requirements:**\r\n1. **Primary Metrics (Hero Cards):**\r\n   - **Monthly Total Revenue:** Real-time tracking of gross revenue vs. previous month targets.\r\n   - **Sales Velocity:** Count of total sales closed within the selected period.\r\n2. **Team Comparison Visuals:**\r\n   - **Leaderboard Performance:** Comparative ranking of sales teams by revenue output.\r\n   - **Longitudinal Comparison:** A multi-line chart or stacked area chart showing how teams perform relative to each other over time (Monthly/Quarterly granularity).\r\n3. **Advanced Filtering:**\r\n   - **Regional Slicing:** Ability to filter entire data sets by geographic regions.\r\n   - **Time Dimension:** Toggle between Weekly, Monthly, and Year-to-Date views.\r\n\r\n**Design Aesthetic (Ampliwork Midnight Cyan):**\r\n- **Palette:** Deep Midnight Navy (`#020617`) backgrounds with interactive Cyan (`#00A3FF`) highlights.\r\n- **Glassmorphism:** Use semi-transparent card backgrounds with frosted-glass blur effects.\r\n- **UI Elements:** Use pill-shaped buttons (`rounded-full`) and strict geometric layouts.\r\n- **Data Density:** High-information density with clear visual hierarchy, optimized for dashboard \"Command Center\" viewing.\r\n",
+    "requirements": [
+      {
+        "id": "e26a83aa-5e27-49d9-aab1-00995ea92aa3",
+        "description": "Implement the core feature: **Refined Feature Request: Executive Sales & Performance Dashboard**\r\n\r\n**Object",
+        "priority": "must"
+      },
+      {
+        "id": "0dfba6dc-9293-4558-9e5c-8781c24e65d7",
+        "description": "Ensure responsive design across desktop and mobile",
+        "priority": "must"
+      },
+      {
+        "id": "085014f2-34df-4a5f-9cbc-5ce239db6880",
+        "description": "Add smooth animations and visual polish",
+        "priority": "should"
+      },
+      {
+        "id": "19907ac3-204e-4560-bd94-7842abb04425",
+        "description": "Include accessibility support",
+        "priority": "should"
+      }
+    ],
+    "acceptanceCriteria": [
+      "The feature \"**Refined Feature Request: Executive Sales & Performance Dashboard**\r\n\r\n**Object\" works as described",
+      "UI is responsive and visually polished",
+      "No console errors or warnings"
+    ],
+    "uiContract": {
+      "screens": []
+    }
+  },
+  "uiContract": {
+    "screens": [
+      {
+        "id": "f4aabca4-cd27-45d7-9f7d-bcc635443170",
+        "name": "**Refined Feature Request: Executive Sales & Performance Dashboard**\r\n\r\n**Object",
+        "route": "/",
+        "components": [
+          {
+            "name": "FeatureComponent",
+            "props": {
+              "feature": "**Refined Feature Request: Executive Sales & Performance Dashboard**\r\n\r\n**Object"
+            },
+            "state": {}
+          }
+        ],
+        "description": "Main screen implementing: **Refined Feature Request: Executive Sales & Performance Dashboard**\r\n\r\n**Object"
+      }
+    ]
+  }
+}

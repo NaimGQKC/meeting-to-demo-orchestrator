@@ -1,0 +1,81 @@
+{
+  "runId": "ba63a65f-1144-4f99-ba98-cf7560d1ccdb",
+  "featureBrief": {
+    "meetingId": "direct-input",
+    "meetingDate": "2026-02-18T04:34:32.712Z",
+    "features": [
+      {
+        "id": "8cd6d26d-5a90-4608-8cd0-25bc2e202b41",
+        "title": "**Refined Feature Request: Sales Performance & Comparison Dashboard**\r\n\r\n**Objec",
+        "description": "**Refined Feature Request: Sales Performance & Comparison Dashboard**\r\n\r\n**Objective:**\r\nDesign a comprehensive sales dashboard for Managers that provides a deep-dive into team performance over time, focusing on revenue and volume metrics to identify top-performing units and growth trends.\r\n\r\n**Core Requirements:**\r\n1. **Key Performance Indicators (KPIs):**\r\n   - **Total Monthly Revenue:** High-level summary of income generated in the current/selected month.\r\n   - **Total Sale Count:** Volume metric showing the number of transactions closed.\r\n2. **Team Comparison Views:**\r\n   - **Performance Leaderboard:** Compare different sales teams side-by-side.\r\n   - **Trend Comparison:** Overlay team performance data on a single timeline to visualize who is gaining or losing momentum.\r\n3. **Filtering & Analysis:**\r\n   - **Time Dimension:** Ability to slice data by month, quarter, and year to see historical trends.\r\n   - **Team Filtering:** Focus on specific teams or compare specific subsets of the organization.\r\n\r\n**Design Aesthetic (Ampliwork Style):**\r\n- **Foundation:** Midnight Navy (`#020617`) background with subtle Glassmorphism effects.\r\n- **Accents:** Vibrant Cyan (`#00A3FF`) for active states and primary trend lines.\r\n- **Components:** High-density data tables, pill-shaped buttons (`rounded-full`), and clean, high-contrast typography.\r\n- **Responsiveness:** Ensure a \"Command Center\" feel on desktop while maintaining readability on mobile devices.\r\n",
+        "priority": "high"
+      }
+    ],
+    "context": "**Refined Feature Request: Sales Performance & Comparison Dashboard**\r\n\r\n**Objective:**\r\nDesign a comprehensive sales dashboard for Managers that provides a deep-dive into team performance over time, focusing on revenue and volume metrics to identify top-performing units and growth trends.\r\n\r\n**Core Requirements:**\r\n1. **Key Performance Indicators (KPIs):**\r\n   - **Total Monthly Revenue:** High-level summary of income generated in the current/selected month.\r\n   - **Total Sale Count:** Volume metric showing the number of transactions closed.\r\n2. **Team Comparison Views:**\r\n   - **Performance Leaderboard:** Compare different sales teams side-by-side.\r\n   - **Trend Comparison:** Overlay team performance data on a single timeline to visualize who is gaining or losing momentum.\r\n3. **Filtering & Analysis:**\r\n   - **Time Dimension:** Ability to slice data by month, quarter, and year to see historical trends.\r\n   - **Team Filtering:** Focus on specific teams or compare specific subsets of the organization.\r\n\r\n**Design Aesthetic (Ampliwork Style):**\r\n- **Foundation:** Midnight Navy (`#020617`) background with subtle Glassmorphism effects.\r\n- **Accents:** Vibrant Cyan (`#00A3FF`) for active states and primary trend lines.\r\n- **Components:** High-density data tables, pill-shaped buttons (`rounded-full`), and clean, high-contrast typography.\r\n- **Responsiveness:** Ensure a \"Command Center\" feel on desktop while maintaining readability on mobile devices.\r\n"
+  },
+  "approvals": [],
+  "status": "awaiting_prd_review",
+  "createdAt": "2026-02-18T04:34:32.712Z",
+  "updatedAt": "2026-02-18T04:34:38.939Z",
+  "contextPacket": {
+    "accountId": "a77798d2-a2cf-47ea-a1d4-0f303c0521f4",
+    "projectContext": "**Refined Feature Request: Sales Performance & Comparison Dashboard**\r\n\r\n**Objective:**\r\nDesign a comprehensive sales dashboard for Managers that provides a deep-dive into team performance over time, focusing on revenue and volume metrics to identify top-performing units and growth trends.\r\n\r\n**Core Requirements:**\r\n1. **Key Performance Indicators (KPIs):**\r\n   - **Total Monthly Revenue:** High-level summary of income generated in the current/selected month.\r\n   - **Total Sale Count:** Volume metric showing the number of transactions closed.\r\n2. **Team Comparison Views:**\r\n   - **Performance Leaderboard:** Compare different sales teams side-by-side.\r\n   - **Trend Comparison:** Overlay team performance data on a single timeline to visualize who is gaining or losing momentum.\r\n3. **Filtering & Analysis:**\r\n   - **Time Dimension:** Ability to slice data by month, quarter, and year to see historical trends.\r\n   - **Team Filtering:** Focus on specific teams or compare specific subsets of the organization.\r\n\r\n**Design Aesthetic (Ampliwork Style):**\r\n- **Foundation:** Midnight Navy (`#020617`) background with subtle Glassmorphism effects.\r\n- **Accents:** Vibrant Cyan (`#00A3FF`) for active states and primary trend lines.\r\n- **Components:** High-density data tables, pill-shaped buttons (`rounded-full`), and clean, high-contrast typography.\r\n- **Responsiveness:** Ensure a \"Command Center\" feel on desktop while maintaining readability on mobile devices.\r\n",
+    "scope": "**Refined Feature Request: Sales Performance & Comparison Dashboard**\r\n\r\n**Objec",
+    "assumptions": [],
+    "openQuestions": []
+  },
+  "prd": {
+    "id": "5eb961e4-e78e-4c87-9fe9-dc83d548bfbe",
+    "title": "PRD: **Refined Feature Request: Sales Performance & Comparison Dashboard**\r\n\r\n**Objec",
+    "overview": "Product Requirements Document for: **Refined Feature Request: Sales Performance & Comparison Dashboard**\r\n\r\n**Objec\n\nContext: **Refined Feature Request: Sales Performance & Comparison Dashboard**\r\n\r\n**Objective:**\r\nDesign a comprehensive sales dashboard for Managers that provides a deep-dive into team performance over time, focusing on revenue and volume metrics to identify top-performing units and growth trends.\r\n\r\n**Core Requirements:**\r\n1. **Key Performance Indicators (KPIs):**\r\n   - **Total Monthly Revenue:** High-level summary of income generated in the current/selected month.\r\n   - **Total Sale Count:** Volume metric showing the number of transactions closed.\r\n2. **Team Comparison Views:**\r\n   - **Performance Leaderboard:** Compare different sales teams side-by-side.\r\n   - **Trend Comparison:** Overlay team performance data on a single timeline to visualize who is gaining or losing momentum.\r\n3. **Filtering & Analysis:**\r\n   - **Time Dimension:** Ability to slice data by month, quarter, and year to see historical trends.\r\n   - **Team Filtering:** Focus on specific teams or compare specific subsets of the organization.\r\n\r\n**Design Aesthetic (Ampliwork Style):**\r\n- **Foundation:** Midnight Navy (`#020617`) background with subtle Glassmorphism effects.\r\n- **Accents:** Vibrant Cyan (`#00A3FF`) for active states and primary trend lines.\r\n- **Components:** High-density data tables, pill-shaped buttons (`rounded-full`), and clean, high-contrast typography.\r\n- **Responsiveness:** Ensure a \"Command Center\" feel on desktop while maintaining readability on mobile devices.\r\n",
+    "requirements": [
+      {
+        "id": "fe8b4a12-1145-4ee2-bbe7-fff4dca4509a",
+        "description": "Implement the core feature: **Refined Feature Request: Sales Performance & Comparison Dashboard**\r\n\r\n**Objec",
+        "priority": "must"
+      },
+      {
+        "id": "cf7b9ddd-e97a-4855-abe2-19d45a21595d",
+        "description": "Ensure responsive design across desktop and mobile",
+        "priority": "must"
+      },
+      {
+        "id": "2ae91dd6-cffe-4faf-90b3-1d5cce68487f",
+        "description": "Add smooth animations and visual polish",
+        "priority": "should"
+      },
+      {
+        "id": "b97ea17e-defc-41f4-92d7-7b07f2aad1f2",
+        "description": "Include accessibility support",
+        "priority": "should"
+      }
+    ],
+    "acceptanceCriteria": [
+      "The feature \"**Refined Feature Request: Sales Performance & Comparison Dashboard**\r\n\r\n**Objec\" works as described",
+      "UI is responsive and visually polished",
+      "No console errors or warnings"
+    ],
+    "uiContract": {
+      "screens": []
+    }
+  },
+  "uiContract": {
+    "screens": [
+      {
+        "id": "f2343076-6d17-4c4c-b17b-4a6279297764",
+        "name": "**Refined Feature Request: Sales Performance & Comparison Dashboard**\r\n\r\n**Objec",
+        "route": "/",
+        "components": [
+          {
+            "name": "FeatureComponent",
+            "props": {
+              "feature": "**Refined Feature Request: Sales Performance & Comparison Dashboard**\r\n\r\n**Objec"
+            },
+            "state": {}
+          }
+        ],
+        "description": "Main screen implementing: **Refined Feature Request: Sales Performance & Comparison Dashboard**\r\n\r\n**Objec"
+      }
+    ]
+  }
+}

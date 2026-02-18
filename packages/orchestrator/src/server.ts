@@ -9,8 +9,10 @@ import {
 import { z } from "zod";
 import * as dotenv from "dotenv";
 import express from "express";
+import bodyParser from "body-parser";
 import { OrchestratorService } from "./service.js";
 import { setupWebhooks } from "./webhooks.js";
+import { setupReviewRoutes } from "./review-server.js";
 
 dotenv.config();
 
@@ -84,6 +86,23 @@ const RunPipelineTool: Tool = {
         type: "object",
         properties: {
             featureRequest: { type: "string", description: "The feature request or description to generate a PRD for." }
+        },
+        required: ["featureRequest"]
+    }
+};
+
+const RefinePromptTool: Tool = {
+    name: "refine_prompt",
+    description: "Refine a raw feature request using AI before sending to ChatPRD. May return clarifying questions. Call again with answers to finalize the prompt.",
+    inputSchema: {
+        type: "object",
+        properties: {
+            featureRequest: { type: "string", description: "The raw feature request text from the user." },
+            answers: {
+                type: "object",
+                description: "Optional. Key-value pairs of answers to previously asked questions.",
+                additionalProperties: { type: "string" }
+            }
         },
         required: ["featureRequest"]
     }
@@ -183,6 +202,7 @@ server.setRequestHandler(ListToolsRequestSchema, async () => ({
         StartManualRunTool,
         StartRunFromJsonTool,
         StartRunFromTextTool,
+        RefinePromptTool,
         RunPipelineTool,
         ApprovePRDTool,
         GetRunTool,
@@ -221,6 +241,14 @@ async function handleToolCall(request: any) {
             const run = await orchestrator.startRunFromText(rawText);
             return {
                 content: [{ type: "text", text: `Run started from text: ${run.runId}` }]
+            };
+        } else if (name === "refine_prompt") {
+            const { featureRequest, answers } = args as { featureRequest: string; answers?: Record<string, string> };
+            const result = await orchestrator.refinePrompt(featureRequest, answers);
+            return {
+                content: [{
+                    type: "text", text: JSON.stringify(result, null, 2)
+                }]
             };
         } else if (name === "run_pipeline") {
             const { featureRequest } = args as { featureRequest: string };
@@ -310,8 +338,28 @@ async function main() {
     const app = express();
     const port = process.env.PORT || 3000;
 
+    // GLOBAL DEBUG LOGGING (stderr)
+    app.use((req, res, next) => {
+        console.error(`[DEBUG GLOBAL] ${req.method} ${req.url}`);
+        next();
+    });
+
+    // JSON body parsing for all routes (global)
+    app.use(express.json());
+
+    // DEBUG BODY PARSING
+    app.use((req, res, next) => {
+        if (req.method === 'POST') {
+            console.error('[DEBUG BODY]', req.originalUrl, typeof req.body, JSON.stringify(req.body).substring(0, 100));
+        }
+        next();
+    });
+
     // Setup Webhooks
     setupWebhooks(app, orchestrator);
+
+    // Setup Review UI (serves at /review with Ampliwork branding)
+    setupReviewRoutes(app);
 
     // ─── SSE Transport (for ChatGPT / remote MCP clients) ───
     // We need a separate Server instance for SSE since each Server
@@ -352,19 +400,38 @@ async function main() {
         await sseServer.connect(sseTransport);
     });
 
-    app.post("/messages", async (req, res) => {
-        if (!sseTransport) {
-            res.status(400).json({ error: "No SSE connection established. Connect to /sse first." });
-            return;
+    const jsonParser = bodyParser.json();
+    app.post("/messages", jsonParser, async (req, res) => {
+        try {
+            console.error(`[DEBUG] /messages POST. Content-Type: ${req.headers['content-type']}`);
+            console.error(`[DEBUG] req.body type: ${typeof req.body}`, req.body);
+
+            if (!sseTransport) {
+                res.status(400).json({ error: "No SSE connection established. Connect to /sse first." });
+                return;
+            }
+
+            // Bypass handlePostMessage's internal stream reading logic entirely
+            // We trust express.json() has parsed the body correctly
+            const body = req.body;
+            console.error('[DEBUG] Handling message directly:', JSON.stringify(body));
+
+            await sseTransport.handleMessage(body);
+            res.status(202).send("Accepted");
+        } catch (err: any) {
+            console.error("[ERROR] /messages failed:", err);
+            res.status(500).send(`SERVER ERROR: ${err.message}\nSTACK: ${err.stack}`);
         }
-        await sseTransport.handlePostMessage(req, res);
     });
 
-    app.listen(port, () => {
+    const serverInstance = app.listen(port, () => {
         console.error(`Webhook + SSE server listening on port ${port}`);
         console.error(`  SSE endpoint: http://localhost:${port}/sse`);
         console.error(`  Messages endpoint: http://localhost:${port}/messages`);
     });
+
+    // Set server timeout to 15 minutes for long-running AI tasks
+    (serverInstance as any).timeout = 900000;
 
     // ─── Stdio Transport (for local IDE use) ───
     const transport = new StdioServerTransport();

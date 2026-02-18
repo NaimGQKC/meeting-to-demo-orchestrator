@@ -22,6 +22,8 @@ export interface IChatGPTAdapter {
     formatFeatureBrief(rawText: string): Promise<FeatureBrief>;
 }
 
+const MCP_TIMEOUT = 900000; // 15 minutes
+
 export class CirclebackMCPAdapter implements ICirclebackAdapter {
     private url: string;
 
@@ -51,7 +53,7 @@ export class CirclebackMCPAdapter implements ICirclebackAdapter {
             const result = await client.callTool({
                 name: "get_meeting_features",
                 arguments: { meetingId }
-            });
+            }, undefined, { timeout: MCP_TIMEOUT });
 
             // Parse result into FeatureBrief
             // This is a placeholder for actual parsing logic
@@ -399,7 +401,7 @@ Please include:
             const result = await client.callTool({
                 name: prdTool.name,
                 arguments: { prompt }
-            });
+            }, undefined, { timeout: MCP_TIMEOUT });
 
             if (result.isError) {
                 throw new Error(`ChatPRD Error: ${JSON.stringify(result.content)}`);
@@ -535,6 +537,68 @@ export class V0MCPAdapter implements IVercelAdapter {
     }
 }
 
+// ────────────────────────────────────────
+// Antigravity Adapter — Transforms generic v0 output into Ampliwork design
+// ────────────────────────────────────────
+
+import * as fs from 'fs';
+import * as path from 'path';
+
+// ────────────────────────────────────────
+// Antigravity Native Workflow Adapter
+// ────────────────────────────────────────
+
+export class AntigravityAdapter implements IAntigravityAdapter {
+    /**
+     * Hand off the v0 output to the Antigravity Native Workflow (Agent) for final adaptation.
+     * Writes to .agent/native-workflow/request.md and waits for response.md.
+     */
+    async adaptPrototype(v0Output: string): Promise<string> {
+        console.log('[AntigravityAdapter] Handing off to Native Workflow Agent...');
+
+        const workflowDir = path.resolve(process.cwd(), '.agent', 'native-workflow');
+        const requestPath = path.join(workflowDir, 'request.md');
+        const responsePath = path.join(workflowDir, 'response.md');
+
+        // Ensure directory exists
+        if (!fs.existsSync(workflowDir)) {
+            fs.mkdirSync(workflowDir, { recursive: true });
+        }
+
+        // Write the request
+        const requestContent = `# Antigravity Native Workflow Request\n\nInput Code (v0):\n\n\`\`\`tsx\n${v0Output}\n\`\`\`\n\nTask: Apply Ampliwork Design System (Midnight Navy, Cyan, Pills) and fix any issues.`;
+        fs.writeFileSync(requestPath, requestContent);
+
+        // Clear old response
+        if (fs.existsSync(responsePath)) fs.unlinkSync(responsePath);
+
+        console.log(`[AntigravityAdapter] Request saved to: ${requestPath}`);
+        console.log(`[AntigravityAdapter] Waiting for Agent response...`);
+
+        // Poll for response (timeout 15 minutes to match MCP)
+        const maxRetries = 450; // 450 * 2s = 900s = 15 mins
+        for (let i = 0; i < maxRetries; i++) {
+            await new Promise(resolve => setTimeout(resolve, 2000));
+
+            if (i % 5 === 0) {
+                console.log(`[AntigravityAdapter] Polling for Agent response... (${i * 2}s / 900s)`);
+            }
+
+            if (fs.existsSync(responsePath)) {
+                console.log(`[AntigravityAdapter] Agent responded! Reading ${responsePath}`);
+                const responseContent = fs.readFileSync(responsePath, 'utf8');
+
+                // Extract code from markdown block if present
+                const fenceRegex = /```(?:tsx|jsx|typescript|javascript)?\s*\n([\s\S]*?)```/;
+                const match = fenceRegex.exec(responseContent);
+                return match ? match[1].trim() : responseContent;
+            }
+        }
+
+        throw new Error("Antigravity Native Workflow timed out waiting for response.");
+    }
+}
+
 export class MockAntigravityAdapter implements IAntigravityAdapter {
     async adaptPrototype(v0Output: string): Promise<string> {
         return 'Mock Adapted Prototype based on ' + v0Output;
@@ -544,6 +608,57 @@ export class MockAntigravityAdapter implements IAntigravityAdapter {
 export class MockIntegrationAdapter implements IIntegrationAdapter {
     async pushToAsana(run: RunPacket): Promise<void> {
         console.log('Pushing to Asana mock: ', run.runId);
+    }
+}
+
+// ────────────────────────────────────────
+// Prompt Refiner — AI-powered feature request refinement
+// ────────────────────────────────────────
+
+export interface PromptRefinementResult {
+    refinedPrompt: string;    // Cleaned-up, structured prompt for ChatPRD
+    questions?: string[];     // Optional clarifying questions to ask user
+    isReady: boolean;         // true = prompt is ready for ChatPRD, false = needs more answers
+}
+
+export interface IPromptRefinerAdapter {
+    /**
+     * Refines a raw feature request into a structured prompt for ChatPRD.
+     * May return clarifying questions; call again with answers to finalize.
+     * @param rawRequest - The user's raw feature request text
+     * @param previousAnswers - Answers to previously asked questions (key = question, value = answer)
+     */
+    refinePrompt(rawRequest: string, previousAnswers?: Record<string, string>): Promise<PromptRefinementResult>;
+}
+
+/**
+ * Placeholder Mock — swap this with your own AI adapter.
+ * On first call: returns a structured refinement + 2 clarifying questions.
+ * On second call (with answers): returns the final refined prompt.
+ */
+export class MockPromptRefinerAdapter implements IPromptRefinerAdapter {
+    async refinePrompt(rawRequest: string, previousAnswers?: Record<string, string>): Promise<PromptRefinementResult> {
+        if (previousAnswers && Object.keys(previousAnswers).length > 0) {
+            // Second call — user answered questions, finalize the prompt
+            const answerContext = Object.entries(previousAnswers)
+                .map(([q, a]) => `Q: ${q}\nA: ${a}`)
+                .join('\n\n');
+
+            return {
+                refinedPrompt: `## Feature Request (Refined)\n\n**Original Request:** ${rawRequest}\n\n**Clarifications:**\n${answerContext}\n\n**Refined Description:**\nBuild a feature that: ${rawRequest}. ${Object.values(previousAnswers).join('. ')}.`,
+                isReady: true
+            };
+        }
+
+        // First call — return a basic refinement + clarifying questions
+        return {
+            refinedPrompt: `Build a feature that: ${rawRequest}`,
+            questions: [
+                'Who is the target user for this feature?',
+                'Are there any specific design preferences or constraints?'
+            ],
+            isReady: false
+        };
     }
 }
 

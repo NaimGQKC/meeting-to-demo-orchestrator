@@ -1,0 +1,81 @@
+{
+  "runId": "0d12365e-59aa-4a5c-a426-caa4b30db232",
+  "featureBrief": {
+    "meetingId": "direct-input",
+    "meetingDate": "2026-02-17T22:00:55.447Z",
+    "features": [
+      {
+        "id": "c6832367-f7cb-4562-ac12-0470a376c089",
+        "title": "A high-level **Sales Manager Dashboard** designed as a \"Management Cockpit\" for ",
+        "description": "A high-level **Sales Manager Dashboard** designed as a \"Management Cockpit\" for tracking and comparing team performance.\r\n\r\n**Project Scope:**\r\nBuild a revenue-first dashboard that allows Sales Managers to visualize collective team health and perform comparative analysis across different regions and timeframes.\r\n\r\n**Core UI Requirements:**\r\n1.  **Hero Scorecard (Top Center):** \r\n    *   A prominent visual card displaying **Team Revenue YTD**.\r\n    *   Include a smaller secondary indicator showing the % change vs. the same period last year (YoY).\r\n\r\n2.  **Comparative Revenue Trends (Main Section):**\r\n    *   A large **Line Chart** (or Area Chart) demonstrating Revenue trends over time. \r\n    *   **Default View:** Year-to-Date (YTD).\r\n    *   **Feature:** The chart should support overlays for multiple teams or regions to enable direct comparison of performance curves.\r\n\r\n3.  **Regional Performance Breakdown:**\r\n    *   A secondary visualization (e.g., a clustered Bar Chart) showing revenue distribution across different **Regions**.\r\n\r\n4.  **Global Command Center (Filters):**\r\n    *   **Team Multi-Selector:** Toggle between different sales teams.\r\n    *   **Region Selector:** Deep dive into specific territories.\r\n    *   **Date Range Picker:** Customizable time windows (e.g., QTD, YTD, Custom).\r\n\r\n**UX Philosophy:**\r\n*   **Minimalist & Executive:** Focus on high-level trends and collective performance rather than individual rep leaderboards.\r\n*   **Data Density:** Use clean typography and high-contrast charts to make performance dips immediately visible to busy managers.\r\n",
+        "priority": "high"
+      }
+    ],
+    "context": "A high-level **Sales Manager Dashboard** designed as a \"Management Cockpit\" for tracking and comparing team performance.\r\n\r\n**Project Scope:**\r\nBuild a revenue-first dashboard that allows Sales Managers to visualize collective team health and perform comparative analysis across different regions and timeframes.\r\n\r\n**Core UI Requirements:**\r\n1.  **Hero Scorecard (Top Center):** \r\n    *   A prominent visual card displaying **Team Revenue YTD**.\r\n    *   Include a smaller secondary indicator showing the % change vs. the same period last year (YoY).\r\n\r\n2.  **Comparative Revenue Trends (Main Section):**\r\n    *   A large **Line Chart** (or Area Chart) demonstrating Revenue trends over time. \r\n    *   **Default View:** Year-to-Date (YTD).\r\n    *   **Feature:** The chart should support overlays for multiple teams or regions to enable direct comparison of performance curves.\r\n\r\n3.  **Regional Performance Breakdown:**\r\n    *   A secondary visualization (e.g., a clustered Bar Chart) showing revenue distribution across different **Regions**.\r\n\r\n4.  **Global Command Center (Filters):**\r\n    *   **Team Multi-Selector:** Toggle between different sales teams.\r\n    *   **Region Selector:** Deep dive into specific territories.\r\n    *   **Date Range Picker:** Customizable time windows (e.g., QTD, YTD, Custom).\r\n\r\n**UX Philosophy:**\r\n*   **Minimalist & Executive:** Focus on high-level trends and collective performance rather than individual rep leaderboards.\r\n*   **Data Density:** Use clean typography and high-contrast charts to make performance dips immediately visible to busy managers.\r\n"
+  },
+  "approvals": [],
+  "status": "awaiting_prd_review",
+  "createdAt": "2026-02-17T22:00:55.447Z",
+  "updatedAt": "2026-02-17T22:01:02.530Z",
+  "contextPacket": {
+    "accountId": "a91bde31-d9d6-4840-921a-147ecbf0603d",
+    "projectContext": "A high-level **Sales Manager Dashboard** designed as a \"Management Cockpit\" for tracking and comparing team performance.\r\n\r\n**Project Scope:**\r\nBuild a revenue-first dashboard that allows Sales Managers to visualize collective team health and perform comparative analysis across different regions and timeframes.\r\n\r\n**Core UI Requirements:**\r\n1.  **Hero Scorecard (Top Center):** \r\n    *   A prominent visual card displaying **Team Revenue YTD**.\r\n    *   Include a smaller secondary indicator showing the % change vs. the same period last year (YoY).\r\n\r\n2.  **Comparative Revenue Trends (Main Section):**\r\n    *   A large **Line Chart** (or Area Chart) demonstrating Revenue trends over time. \r\n    *   **Default View:** Year-to-Date (YTD).\r\n    *   **Feature:** The chart should support overlays for multiple teams or regions to enable direct comparison of performance curves.\r\n\r\n3.  **Regional Performance Breakdown:**\r\n    *   A secondary visualization (e.g., a clustered Bar Chart) showing revenue distribution across different **Regions**.\r\n\r\n4.  **Global Command Center (Filters):**\r\n    *   **Team Multi-Selector:** Toggle between different sales teams.\r\n    *   **Region Selector:** Deep dive into specific territories.\r\n    *   **Date Range Picker:** Customizable time windows (e.g., QTD, YTD, Custom).\r\n\r\n**UX Philosophy:**\r\n*   **Minimalist & Executive:** Focus on high-level trends and collective performance rather than individual rep leaderboards.\r\n*   **Data Density:** Use clean typography and high-contrast charts to make performance dips immediately visible to busy managers.\r\n",
+    "scope": "A high-level **Sales Manager Dashboard** designed as a \"Management Cockpit\" for ",
+    "assumptions": [],
+    "openQuestions": []
+  },
+  "prd": {
+    "id": "e64f850b-30ae-4f39-b88c-fd2ed3e077b2",
+    "title": "PRD: A high-level **Sales Manager Dashboard** designed as a \"Management Cockpit\" for ",
+    "overview": "Product Requirements Document for: A high-level **Sales Manager Dashboard** designed as a \"Management Cockpit\" for \n\nContext: A high-level **Sales Manager Dashboard** designed as a \"Management Cockpit\" for tracking and comparing team performance.\r\n\r\n**Project Scope:**\r\nBuild a revenue-first dashboard that allows Sales Managers to visualize collective team health and perform comparative analysis across different regions and timeframes.\r\n\r\n**Core UI Requirements:**\r\n1.  **Hero Scorecard (Top Center):** \r\n    *   A prominent visual card displaying **Team Revenue YTD**.\r\n    *   Include a smaller secondary indicator showing the % change vs. the same period last year (YoY).\r\n\r\n2.  **Comparative Revenue Trends (Main Section):**\r\n    *   A large **Line Chart** (or Area Chart) demonstrating Revenue trends over time. \r\n    *   **Default View:** Year-to-Date (YTD).\r\n    *   **Feature:** The chart should support overlays for multiple teams or regions to enable direct comparison of performance curves.\r\n\r\n3.  **Regional Performance Breakdown:**\r\n    *   A secondary visualization (e.g., a clustered Bar Chart) showing revenue distribution across different **Regions**.\r\n\r\n4.  **Global Command Center (Filters):**\r\n    *   **Team Multi-Selector:** Toggle between different sales teams.\r\n    *   **Region Selector:** Deep dive into specific territories.\r\n    *   **Date Range Picker:** Customizable time windows (e.g., QTD, YTD, Custom).\r\n\r\n**UX Philosophy:**\r\n*   **Minimalist & Executive:** Focus on high-level trends and collective performance rather than individual rep leaderboards.\r\n*   **Data Density:** Use clean typography and high-contrast charts to make performance dips immediately visible to busy managers.\r\n",
+    "requirements": [
+      {
+        "id": "e5910b1c-d0d4-48a7-8353-46f02f99a568",
+        "description": "Implement the core feature: A high-level **Sales Manager Dashboard** designed as a \"Management Cockpit\" for ",
+        "priority": "must"
+      },
+      {
+        "id": "2ca7e89e-9780-49dc-8fc4-142599f79c22",
+        "description": "Ensure responsive design across desktop and mobile",
+        "priority": "must"
+      },
+      {
+        "id": "c49d8237-5b2f-4c4a-9c6a-bb598b257c08",
+        "description": "Add smooth animations and visual polish",
+        "priority": "should"
+      },
+      {
+        "id": "ba5e2799-a79c-4636-95e8-8641adcf5e31",
+        "description": "Include accessibility support",
+        "priority": "should"
+      }
+    ],
+    "acceptanceCriteria": [
+      "The feature \"A high-level **Sales Manager Dashboard** designed as a \"Management Cockpit\" for \" works as described",
+      "UI is responsive and visually polished",
+      "No console errors or warnings"
+    ],
+    "uiContract": {
+      "screens": []
+    }
+  },
+  "uiContract": {
+    "screens": [
+      {
+        "id": "f5903947-23e7-4404-a39a-355fb6c318f7",
+        "name": "A high-level **Sales Manager Dashboard** designed as a \"Management Cockpit\" for ",
+        "route": "/",
+        "components": [
+          {
+            "name": "FeatureComponent",
+            "props": {
+              "feature": "A high-level **Sales Manager Dashboard** designed as a \"Management Cockpit\" for "
+            },
+            "state": {}
+          }
+        ],
+        "description": "Main screen implementing: A high-level **Sales Manager Dashboard** designed as a \"Management Cockpit\" for "
+      }
+    ]
+  }
+}

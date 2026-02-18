@@ -1,0 +1,81 @@
+{
+  "runId": "16e5e422-6127-4bae-9094-3cc646563edf",
+  "featureBrief": {
+    "meetingId": "direct-input",
+    "meetingDate": "2026-02-17T22:03:18.212Z",
+    "features": [
+      {
+        "id": "ed31d22f-10d4-47bb-b0f4-bfab35745f81",
+        "title": "A refined **Sales Manager Dashboard** focused on high-level team health and stra",
+        "description": "A refined **Sales Manager Dashboard** focused on high-level team health and strategic comparison.\r\n\r\n**Strategic Focus:**\r\nProvide Sales Managers with a \"Clean Executive Slide\" style cockpit to monitor key efficiency metrics and compare team performance side-by-side.\r\n\r\n**Core Features & Layout:**\r\n1.  **Top-Tier KPI Cards:**\r\n    *   **Metric 1:** Total Revenue (YTD)\r\n    *   **Metric 2:** Pipeline Velocity\r\n    *   **Metric 3:** Conversion Rate (Lead-to-Close)\r\n    *   *Design:* High-contrast numbers with goal-relative indicators.\r\n\r\n2.  **Monthly Performance Trends:**\r\n    *   **Visualization:** A spacious Line Chart showing revenue trends.\r\n    *   **Granularity:** Aggregated by **Month**.\r\n    *   **Comparative View:** Side-by-side comparison capabilities (e.g., comparing current region vs. benchmark or another region).\r\n\r\n3.  **Global Filters:**\r\n    *   Team/Region Selector.\r\n    *   Date Range (Month/Quarter/YTD).\r\n\r\n**UX Philosophy:**\r\n*   **Minimalist Executive Aesthetic:** Avoid data-heavy grids. Use white space and high-quality charts.\r\n*   **Actionable Clarity:** Ensure the management can distinguish performance trends across teams at a glance.\r\n",
+        "priority": "high"
+      }
+    ],
+    "context": "A refined **Sales Manager Dashboard** focused on high-level team health and strategic comparison.\r\n\r\n**Strategic Focus:**\r\nProvide Sales Managers with a \"Clean Executive Slide\" style cockpit to monitor key efficiency metrics and compare team performance side-by-side.\r\n\r\n**Core Features & Layout:**\r\n1.  **Top-Tier KPI Cards:**\r\n    *   **Metric 1:** Total Revenue (YTD)\r\n    *   **Metric 2:** Pipeline Velocity\r\n    *   **Metric 3:** Conversion Rate (Lead-to-Close)\r\n    *   *Design:* High-contrast numbers with goal-relative indicators.\r\n\r\n2.  **Monthly Performance Trends:**\r\n    *   **Visualization:** A spacious Line Chart showing revenue trends.\r\n    *   **Granularity:** Aggregated by **Month**.\r\n    *   **Comparative View:** Side-by-side comparison capabilities (e.g., comparing current region vs. benchmark or another region).\r\n\r\n3.  **Global Filters:**\r\n    *   Team/Region Selector.\r\n    *   Date Range (Month/Quarter/YTD).\r\n\r\n**UX Philosophy:**\r\n*   **Minimalist Executive Aesthetic:** Avoid data-heavy grids. Use white space and high-quality charts.\r\n*   **Actionable Clarity:** Ensure the management can distinguish performance trends across teams at a glance.\r\n"
+  },
+  "approvals": [],
+  "status": "awaiting_prd_review",
+  "createdAt": "2026-02-17T22:03:18.212Z",
+  "updatedAt": "2026-02-17T22:03:24.196Z",
+  "contextPacket": {
+    "accountId": "304f0335-7f0c-4066-94a7-997f2ff81c76",
+    "projectContext": "A refined **Sales Manager Dashboard** focused on high-level team health and strategic comparison.\r\n\r\n**Strategic Focus:**\r\nProvide Sales Managers with a \"Clean Executive Slide\" style cockpit to monitor key efficiency metrics and compare team performance side-by-side.\r\n\r\n**Core Features & Layout:**\r\n1.  **Top-Tier KPI Cards:**\r\n    *   **Metric 1:** Total Revenue (YTD)\r\n    *   **Metric 2:** Pipeline Velocity\r\n    *   **Metric 3:** Conversion Rate (Lead-to-Close)\r\n    *   *Design:* High-contrast numbers with goal-relative indicators.\r\n\r\n2.  **Monthly Performance Trends:**\r\n    *   **Visualization:** A spacious Line Chart showing revenue trends.\r\n    *   **Granularity:** Aggregated by **Month**.\r\n    *   **Comparative View:** Side-by-side comparison capabilities (e.g., comparing current region vs. benchmark or another region).\r\n\r\n3.  **Global Filters:**\r\n    *   Team/Region Selector.\r\n    *   Date Range (Month/Quarter/YTD).\r\n\r\n**UX Philosophy:**\r\n*   **Minimalist Executive Aesthetic:** Avoid data-heavy grids. Use white space and high-quality charts.\r\n*   **Actionable Clarity:** Ensure the management can distinguish performance trends across teams at a glance.\r\n",
+    "scope": "A refined **Sales Manager Dashboard** focused on high-level team health and stra",
+    "assumptions": [],
+    "openQuestions": []
+  },
+  "prd": {
+    "id": "609e12c5-c91e-4031-890b-1529b6f24ab5",
+    "title": "PRD: A refined **Sales Manager Dashboard** focused on high-level team health and stra",
+    "overview": "Product Requirements Document for: A refined **Sales Manager Dashboard** focused on high-level team health and stra\n\nContext: A refined **Sales Manager Dashboard** focused on high-level team health and strategic comparison.\r\n\r\n**Strategic Focus:**\r\nProvide Sales Managers with a \"Clean Executive Slide\" style cockpit to monitor key efficiency metrics and compare team performance side-by-side.\r\n\r\n**Core Features & Layout:**\r\n1.  **Top-Tier KPI Cards:**\r\n    *   **Metric 1:** Total Revenue (YTD)\r\n    *   **Metric 2:** Pipeline Velocity\r\n    *   **Metric 3:** Conversion Rate (Lead-to-Close)\r\n    *   *Design:* High-contrast numbers with goal-relative indicators.\r\n\r\n2.  **Monthly Performance Trends:**\r\n    *   **Visualization:** A spacious Line Chart showing revenue trends.\r\n    *   **Granularity:** Aggregated by **Month**.\r\n    *   **Comparative View:** Side-by-side comparison capabilities (e.g., comparing current region vs. benchmark or another region).\r\n\r\n3.  **Global Filters:**\r\n    *   Team/Region Selector.\r\n    *   Date Range (Month/Quarter/YTD).\r\n\r\n**UX Philosophy:**\r\n*   **Minimalist Executive Aesthetic:** Avoid data-heavy grids. Use white space and high-quality charts.\r\n*   **Actionable Clarity:** Ensure the management can distinguish performance trends across teams at a glance.\r\n",
+    "requirements": [
+      {
+        "id": "46ba91a3-e332-4284-bda3-9394d60df261",
+        "description": "Implement the core feature: A refined **Sales Manager Dashboard** focused on high-level team health and stra",
+        "priority": "must"
+      },
+      {
+        "id": "9ecbd9b2-9c14-448f-a08f-3a7aeb5c721b",
+        "description": "Ensure responsive design across desktop and mobile",
+        "priority": "must"
+      },
+      {
+        "id": "0523171d-4b78-4cb2-9137-391472c2c340",
+        "description": "Add smooth animations and visual polish",
+        "priority": "should"
+      },
+      {
+        "id": "68720a35-c694-4c84-b994-46bf4ba7655a",
+        "description": "Include accessibility support",
+        "priority": "should"
+      }
+    ],
+    "acceptanceCriteria": [
+      "The feature \"A refined **Sales Manager Dashboard** focused on high-level team health and stra\" works as described",
+      "UI is responsive and visually polished",
+      "No console errors or warnings"
+    ],
+    "uiContract": {
+      "screens": []
+    }
+  },
+  "uiContract": {
+    "screens": [
+      {
+        "id": "2d0b17d9-b99a-407b-9b1b-3b905a94d349",
+        "name": "A refined **Sales Manager Dashboard** focused on high-level team health and stra",
+        "route": "/",
+        "components": [
+          {
+            "name": "FeatureComponent",
+            "props": {
+              "feature": "A refined **Sales Manager Dashboard** focused on high-level team health and stra"
+            },
+            "state": {}
+          }
+        ],
+        "description": "Main screen implementing: A refined **Sales Manager Dashboard** focused on high-level team health and stra"
+      }
+    ]
+  }
+}

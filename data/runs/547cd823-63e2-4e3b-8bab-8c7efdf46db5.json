@@ -1,0 +1,81 @@
+{
+  "runId": "547cd823-63e2-4e3b-8bab-8c7efdf46db5",
+  "featureBrief": {
+    "meetingId": "direct-input",
+    "meetingDate": "2026-02-17T22:11:43.487Z",
+    "features": [
+      {
+        "id": "84093fab-d769-4e5c-b726-e7e52956e570",
+        "title": "A refined **Sales Manager Dashboard** designed as a \"Minimalist Executive Slide\"",
+        "description": "A refined **Sales Manager Dashboard** designed as a \"Minimalist Executive Slide\" for quick performance monitoring.\r\n\r\n**Core Vision:**\r\nCreate a high-level cockpit for Sales Managers that prioritizes collective team health and comparative trending over individual rep data.\r\n\r\n**UI/UX Requirements:**\r\n1.  **Hero KPI Section:** \r\n    *   Prominent display of **Total Revenue (Year-to-Date)**.\r\n    *   Include a secondary indicator for \"% of Target\" achieved.\r\n2.  **Side-by-Side Performance Comparison:**\r\n    *   A comparative visualization allowing the manager to see performance across different teams or regions simultaneously.\r\n3.  **Monthly Revenue Trends:**\r\n    *   A clean trend line (or Area Chart) broken down by **Month**.\r\n    *   Focus on visual clarity and detecting trajectory shifts.\r\n4.  **Global Filters:**\r\n    *   Team Multi-Selector.\r\n    *   Date Range (MTD, QTD, YTD).\r\n\r\n**Design Style:**\r\n*   **Minimalist Executive:** High contrast, significant white space, and premium typography. Large, readable numbers and clear, uncluttered charts.\r\n",
+        "priority": "high"
+      }
+    ],
+    "context": "A refined **Sales Manager Dashboard** designed as a \"Minimalist Executive Slide\" for quick performance monitoring.\r\n\r\n**Core Vision:**\r\nCreate a high-level cockpit for Sales Managers that prioritizes collective team health and comparative trending over individual rep data.\r\n\r\n**UI/UX Requirements:**\r\n1.  **Hero KPI Section:** \r\n    *   Prominent display of **Total Revenue (Year-to-Date)**.\r\n    *   Include a secondary indicator for \"% of Target\" achieved.\r\n2.  **Side-by-Side Performance Comparison:**\r\n    *   A comparative visualization allowing the manager to see performance across different teams or regions simultaneously.\r\n3.  **Monthly Revenue Trends:**\r\n    *   A clean trend line (or Area Chart) broken down by **Month**.\r\n    *   Focus on visual clarity and detecting trajectory shifts.\r\n4.  **Global Filters:**\r\n    *   Team Multi-Selector.\r\n    *   Date Range (MTD, QTD, YTD).\r\n\r\n**Design Style:**\r\n*   **Minimalist Executive:** High contrast, significant white space, and premium typography. Large, readable numbers and clear, uncluttered charts.\r\n"
+  },
+  "approvals": [],
+  "status": "awaiting_prd_review",
+  "createdAt": "2026-02-17T22:11:43.488Z",
+  "updatedAt": "2026-02-17T22:11:50.780Z",
+  "contextPacket": {
+    "accountId": "9dac0d01-ce09-42df-9336-1713e3e9a799",
+    "projectContext": "A refined **Sales Manager Dashboard** designed as a \"Minimalist Executive Slide\" for quick performance monitoring.\r\n\r\n**Core Vision:**\r\nCreate a high-level cockpit for Sales Managers that prioritizes collective team health and comparative trending over individual rep data.\r\n\r\n**UI/UX Requirements:**\r\n1.  **Hero KPI Section:** \r\n    *   Prominent display of **Total Revenue (Year-to-Date)**.\r\n    *   Include a secondary indicator for \"% of Target\" achieved.\r\n2.  **Side-by-Side Performance Comparison:**\r\n    *   A comparative visualization allowing the manager to see performance across different teams or regions simultaneously.\r\n3.  **Monthly Revenue Trends:**\r\n    *   A clean trend line (or Area Chart) broken down by **Month**.\r\n    *   Focus on visual clarity and detecting trajectory shifts.\r\n4.  **Global Filters:**\r\n    *   Team Multi-Selector.\r\n    *   Date Range (MTD, QTD, YTD).\r\n\r\n**Design Style:**\r\n*   **Minimalist Executive:** High contrast, significant white space, and premium typography. Large, readable numbers and clear, uncluttered charts.\r\n",
+    "scope": "A refined **Sales Manager Dashboard** designed as a \"Minimalist Executive Slide\"",
+    "assumptions": [],
+    "openQuestions": []
+  },
+  "prd": {
+    "id": "00356930-d921-4a66-b81b-b325bfac0a6f",
+    "title": "PRD: A refined **Sales Manager Dashboard** designed as a \"Minimalist Executive Slide\"",
+    "overview": "Product Requirements Document for: A refined **Sales Manager Dashboard** designed as a \"Minimalist Executive Slide\"\n\nContext: A refined **Sales Manager Dashboard** designed as a \"Minimalist Executive Slide\" for quick performance monitoring.\r\n\r\n**Core Vision:**\r\nCreate a high-level cockpit for Sales Managers that prioritizes collective team health and comparative trending over individual rep data.\r\n\r\n**UI/UX Requirements:**\r\n1.  **Hero KPI Section:** \r\n    *   Prominent display of **Total Revenue (Year-to-Date)**.\r\n    *   Include a secondary indicator for \"% of Target\" achieved.\r\n2.  **Side-by-Side Performance Comparison:**\r\n    *   A comparative visualization allowing the manager to see performance across different teams or regions simultaneously.\r\n3.  **Monthly Revenue Trends:**\r\n    *   A clean trend line (or Area Chart) broken down by **Month**.\r\n    *   Focus on visual clarity and detecting trajectory shifts.\r\n4.  **Global Filters:**\r\n    *   Team Multi-Selector.\r\n    *   Date Range (MTD, QTD, YTD).\r\n\r\n**Design Style:**\r\n*   **Minimalist Executive:** High contrast, significant white space, and premium typography. Large, readable numbers and clear, uncluttered charts.\r\n",
+    "requirements": [
+      {
+        "id": "2ea1debf-1115-47da-982a-235d307be75b",
+        "description": "Implement the core feature: A refined **Sales Manager Dashboard** designed as a \"Minimalist Executive Slide\"",
+        "priority": "must"
+      },
+      {
+        "id": "2838f544-7d62-446f-b61d-d542b95c4e68",
+        "description": "Ensure responsive design across desktop and mobile",
+        "priority": "must"
+      },
+      {
+        "id": "4bb8f7c9-217a-4d3d-baed-9f71ecfdc528",
+        "description": "Add smooth animations and visual polish",
+        "priority": "should"
+      },
+      {
+        "id": "ac105692-e280-4d4b-a704-c0868e7fe3c9",
+        "description": "Include accessibility support",
+        "priority": "should"
+      }
+    ],
+    "acceptanceCriteria": [
+      "The feature \"A refined **Sales Manager Dashboard** designed as a \"Minimalist Executive Slide\"\" works as described",
+      "UI is responsive and visually polished",
+      "No console errors or warnings"
+    ],
+    "uiContract": {
+      "screens": []
+    }
+  },
+  "uiContract": {
+    "screens": [
+      {
+        "id": "86b42602-5eda-4125-b2ff-f460b6057901",
+        "name": "A refined **Sales Manager Dashboard** designed as a \"Minimalist Executive Slide\"",
+        "route": "/",
+        "components": [
+          {
+            "name": "FeatureComponent",
+            "props": {
+              "feature": "A refined **Sales Manager Dashboard** designed as a \"Minimalist Executive Slide\""
+            },
+            "state": {}
+          }
+        ],
+        "description": "Main screen implementing: A refined **Sales Manager Dashboard** designed as a \"Minimalist Executive Slide\""
+      }
+    ]
+  }
+}

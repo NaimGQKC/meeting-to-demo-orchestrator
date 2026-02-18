@@ -1,0 +1,81 @@
+{
+  "runId": "a100d05a-6ae5-4a5a-916f-24c6efb887e5",
+  "featureBrief": {
+    "meetingId": "direct-input",
+    "meetingDate": "2026-02-18T01:23:43.958Z",
+    "features": [
+      {
+        "id": "6f79e348-b339-4403-a747-06294882e3c5",
+        "title": "",
+        "description": "",
+        "priority": "high"
+      }
+    ],
+    "context": ""
+  },
+  "approvals": [],
+  "status": "awaiting_prd_review",
+  "createdAt": "2026-02-18T01:23:43.959Z",
+  "updatedAt": "2026-02-18T01:23:53.492Z",
+  "contextPacket": {
+    "accountId": "30332f67-0e45-42bd-a988-93b20b33d570",
+    "projectContext": "Feature request",
+    "scope": "",
+    "assumptions": [],
+    "openQuestions": []
+  },
+  "prd": {
+    "id": "5a614dfd-6aac-4f68-b435-6daef1722ab3",
+    "title": "PRD: Feature request",
+    "overview": "Product Requirements Document for: Feature request\n\nContext: Feature request",
+    "requirements": [
+      {
+        "id": "0ab3735e-0120-4c05-9fb1-dcca36ce3a30",
+        "description": "Implement the core feature: Feature request",
+        "priority": "must"
+      },
+      {
+        "id": "32315cb3-bc5b-4614-b47d-033b053e48fa",
+        "description": "Ensure responsive design across desktop and mobile",
+        "priority": "must"
+      },
+      {
+        "id": "ddd2c55f-4fc8-4fd1-9d89-68c8c9d18971",
+        "description": "Add smooth animations and visual polish",
+        "priority": "should"
+      },
+      {
+        "id": "34a4e6af-e4d2-4bac-b3d8-5cdc69c0edf8",
+        "description": "Include accessibility support",
+        "priority": "should"
+      }
+    ],
+    "acceptanceCriteria": [
+      "The feature \"Feature request\" works as described",
+      "UI is responsive and visually polished",
+      "No console errors or warnings"
+    ],
+    "uiContract": {
+      "screens": []
+    }
+  },
+  "uiContract": {
+    "screens": [
+      {
+        "id": "a27392d4-9d5c-4833-a3db-0ad4be9c03c0",
+        "name": "Feature request",
+        "route": "/",
+        "components": [
+          {
+            "name": "FeatureComponent",
+            "props": {
+              "feature": "Feature request"
+            },
+            "state": {}
+          }
+        ],
+        "description": "Main screen implementing: Feature request"
+      }
+    ]
+  }
+}

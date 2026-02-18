@@ -1,0 +1,81 @@
+{
+  "runId": "023bac79-b756-4cea-8ea3-97c9d55bc86d",
+  "featureBrief": {
+    "meetingId": "direct-input",
+    "meetingDate": "2026-02-18T02:29:10.522Z",
+    "features": [
+      {
+        "id": "1c244701-ad26-417e-9e65-6ad33533c086",
+        "title": "**Refined Feature Request: Sales Manager Performance Dashboard**\r\n\r\n**Objective:",
+        "description": "**Refined Feature Request: Sales Manager Performance Dashboard**\r\n\r\n**Objective:**\r\nCreate a high-level executive dashboard for Sales Managers to track revenue performance and identify growth trends across regions and teams.\r\n\r\n**Core Requirements:**\r\n1. **Primary KPI:** Prominent display of **Total Revenue** (Year-to-Date and Month-to-Date).\r\n2. **Visualizations:** A clear **Line Chart** showing revenue trends over time.\r\n3. **Filtering & Slicing:**\r\n   - **Date Range Picker**\r\n   - **Geographic Slicing:** Filter by **Region**.\r\n   - **Team Drill-down:** Filter by specific **Sales Teams**.\r\n\r\n**Design Aesthetic:**\r\nClean \"Ampliwork\" style with Midnight Navy and Cyan accents.\r\n",
+        "priority": "high"
+      }
+    ],
+    "context": "**Refined Feature Request: Sales Manager Performance Dashboard**\r\n\r\n**Objective:**\r\nCreate a high-level executive dashboard for Sales Managers to track revenue performance and identify growth trends across regions and teams.\r\n\r\n**Core Requirements:**\r\n1. **Primary KPI:** Prominent display of **Total Revenue** (Year-to-Date and Month-to-Date).\r\n2. **Visualizations:** A clear **Line Chart** showing revenue trends over time.\r\n3. **Filtering & Slicing:**\r\n   - **Date Range Picker**\r\n   - **Geographic Slicing:** Filter by **Region**.\r\n   - **Team Drill-down:** Filter by specific **Sales Teams**.\r\n\r\n**Design Aesthetic:**\r\nClean \"Ampliwork\" style with Midnight Navy and Cyan accents.\r\n"
+  },
+  "approvals": [],
+  "status": "awaiting_prd_review",
+  "createdAt": "2026-02-18T02:29:10.522Z",
+  "updatedAt": "2026-02-18T02:29:17.721Z",
+  "contextPacket": {
+    "accountId": "53570f78-2c3e-4e20-b8c9-c046f74e1d5e",
+    "projectContext": "**Refined Feature Request: Sales Manager Performance Dashboard**\r\n\r\n**Objective:**\r\nCreate a high-level executive dashboard for Sales Managers to track revenue performance and identify growth trends across regions and teams.\r\n\r\n**Core Requirements:**\r\n1. **Primary KPI:** Prominent display of **Total Revenue** (Year-to-Date and Month-to-Date).\r\n2. **Visualizations:** A clear **Line Chart** showing revenue trends over time.\r\n3. **Filtering & Slicing:**\r\n   - **Date Range Picker**\r\n   - **Geographic Slicing:** Filter by **Region**.\r\n   - **Team Drill-down:** Filter by specific **Sales Teams**.\r\n\r\n**Design Aesthetic:**\r\nClean \"Ampliwork\" style with Midnight Navy and Cyan accents.\r\n",
+    "scope": "**Refined Feature Request: Sales Manager Performance Dashboard**\r\n\r\n**Objective:",
+    "assumptions": [],
+    "openQuestions": []
+  },
+  "prd": {
+    "id": "e9db1db5-7d01-4472-8dd1-fdccfc2a669e",
+    "title": "PRD: **Refined Feature Request: Sales Manager Performance Dashboard**\r\n\r\n**Objective:",
+    "overview": "Product Requirements Document for: **Refined Feature Request: Sales Manager Performance Dashboard**\r\n\r\n**Objective:\n\nContext: **Refined Feature Request: Sales Manager Performance Dashboard**\r\n\r\n**Objective:**\r\nCreate a high-level executive dashboard for Sales Managers to track revenue performance and identify growth trends across regions and teams.\r\n\r\n**Core Requirements:**\r\n1. **Primary KPI:** Prominent display of **Total Revenue** (Year-to-Date and Month-to-Date).\r\n2. **Visualizations:** A clear **Line Chart** showing revenue trends over time.\r\n3. **Filtering & Slicing:**\r\n   - **Date Range Picker**\r\n   - **Geographic Slicing:** Filter by **Region**.\r\n   - **Team Drill-down:** Filter by specific **Sales Teams**.\r\n\r\n**Design Aesthetic:**\r\nClean \"Ampliwork\" style with Midnight Navy and Cyan accents.\r\n",
+    "requirements": [
+      {
+        "id": "1179a18e-a20f-4e15-8ed7-ad2e977521ec",
+        "description": "Implement the core feature: **Refined Feature Request: Sales Manager Performance Dashboard**\r\n\r\n**Objective:",
+        "priority": "must"
+      },
+      {
+        "id": "e1705a1f-2977-4edf-91de-24747a294187",
+        "description": "Ensure responsive design across desktop and mobile",
+        "priority": "must"
+      },
+      {
+        "id": "dfef497c-0111-4070-bd00-9b1122063d10",
+        "description": "Add smooth animations and visual polish",
+        "priority": "should"
+      },
+      {
+        "id": "cb36ed38-6b43-4564-96bd-709f7b4094fa",
+        "description": "Include accessibility support",
+        "priority": "should"
+      }
+    ],
+    "acceptanceCriteria": [
+      "The feature \"**Refined Feature Request: Sales Manager Performance Dashboard**\r\n\r\n**Objective:\" works as described",
+      "UI is responsive and visually polished",
+      "No console errors or warnings"
+    ],
+    "uiContract": {
+      "screens": []
+    }
+  },
+  "uiContract": {
+    "screens": [
+      {
+        "id": "3c47013a-fcc1-4db2-9635-403469851de2",
+        "name": "**Refined Feature Request: Sales Manager Performance Dashboard**\r\n\r\n**Objective:",
+        "route": "/",
+        "components": [
+          {
+            "name": "FeatureComponent",
+            "props": {
+              "feature": "**Refined Feature Request: Sales Manager Performance Dashboard**\r\n\r\n**Objective:"
+            },
+            "state": {}
+          }
+        ],
+        "description": "Main screen implementing: **Refined Feature Request: Sales Manager Performance Dashboard**\r\n\r\n**Objective:"
+      }
+    ]
+  }
+}

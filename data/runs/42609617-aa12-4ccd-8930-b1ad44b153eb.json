@@ -1,0 +1,81 @@
+{
+  "runId": "42609617-aa12-4ccd-8930-b1ad44b153eb",
+  "featureBrief": {
+    "meetingId": "direct-input",
+    "meetingDate": "2026-02-17T21:48:46.045Z",
+    "features": [
+      {
+        "id": "869b1ca2-0376-4033-9791-9d4848b04ca4",
+        "title": "A high-level **Sales Manager Dashboard** focused on revenue tracking and team co",
+        "description": "A high-level **Sales Manager Dashboard** focused on revenue tracking and team comparison.\r\n\r\n**Target Audience:** Sales Managers.\r\n**Primary Goal:** Monitor team performance trends and compare against other teams at a high level.\r\n\r\n**Key Features & Layout:**\r\n1.  **Executive Summary Cards (Top Row):**\r\n    *   Display critical KPIs for quick health checks.\r\n    *   **Metrics:** Total Revenue (YTD) and % Growth vs Last Year.\r\n    *   *Design:* Big, bold numbers with trend indicators (green/red arrows).\r\n\r\n2.  **Main Revenue Trend:**\r\n    *   **Visualization:** A clean, easy-to-read **Line Chart** showing revenue over time.\r\n    *   **Default View:** Year-to-Date (YTD).\r\n    *   *Interaction:* Simple tooltips on hover (no complex drill-down/click-through to reps).\r\n\r\n3.  **Global Filters (Sidebar or Top Bar):**\r\n    *   **Team Selector:** Dropdown to switch the view between different Sales Teams (e.g., \"Northeast Team\" vs \"Enterprise Team\"). *Single view approach.*\r\n    *   **Time Period:** Quick toggles for This Month, This Quarter, YTD.\r\n\r\n**UX Priority:** Clean, un-cluttered interface suitable for presentation or quick review. Avoid data overload.\r\n",
+        "priority": "high"
+      }
+    ],
+    "context": "A high-level **Sales Manager Dashboard** focused on revenue tracking and team comparison.\r\n\r\n**Target Audience:** Sales Managers.\r\n**Primary Goal:** Monitor team performance trends and compare against other teams at a high level.\r\n\r\n**Key Features & Layout:**\r\n1.  **Executive Summary Cards (Top Row):**\r\n    *   Display critical KPIs for quick health checks.\r\n    *   **Metrics:** Total Revenue (YTD) and % Growth vs Last Year.\r\n    *   *Design:* Big, bold numbers with trend indicators (green/red arrows).\r\n\r\n2.  **Main Revenue Trend:**\r\n    *   **Visualization:** A clean, easy-to-read **Line Chart** showing revenue over time.\r\n    *   **Default View:** Year-to-Date (YTD).\r\n    *   *Interaction:* Simple tooltips on hover (no complex drill-down/click-through to reps).\r\n\r\n3.  **Global Filters (Sidebar or Top Bar):**\r\n    *   **Team Selector:** Dropdown to switch the view between different Sales Teams (e.g., \"Northeast Team\" vs \"Enterprise Team\"). *Single view approach.*\r\n    *   **Time Period:** Quick toggles for This Month, This Quarter, YTD.\r\n\r\n**UX Priority:** Clean, un-cluttered interface suitable for presentation or quick review. Avoid data overload.\r\n"
+  },
+  "approvals": [],
+  "status": "awaiting_prd_review",
+  "createdAt": "2026-02-17T21:48:46.045Z",
+  "updatedAt": "2026-02-17T21:48:55.619Z",
+  "contextPacket": {
+    "accountId": "091ea962-becf-4682-84d5-b7a65adac26b",
+    "projectContext": "A high-level **Sales Manager Dashboard** focused on revenue tracking and team comparison.\r\n\r\n**Target Audience:** Sales Managers.\r\n**Primary Goal:** Monitor team performance trends and compare against other teams at a high level.\r\n\r\n**Key Features & Layout:**\r\n1.  **Executive Summary Cards (Top Row):**\r\n    *   Display critical KPIs for quick health checks.\r\n    *   **Metrics:** Total Revenue (YTD) and % Growth vs Last Year.\r\n    *   *Design:* Big, bold numbers with trend indicators (green/red arrows).\r\n\r\n2.  **Main Revenue Trend:**\r\n    *   **Visualization:** A clean, easy-to-read **Line Chart** showing revenue over time.\r\n    *   **Default View:** Year-to-Date (YTD).\r\n    *   *Interaction:* Simple tooltips on hover (no complex drill-down/click-through to reps).\r\n\r\n3.  **Global Filters (Sidebar or Top Bar):**\r\n    *   **Team Selector:** Dropdown to switch the view between different Sales Teams (e.g., \"Northeast Team\" vs \"Enterprise Team\"). *Single view approach.*\r\n    *   **Time Period:** Quick toggles for This Month, This Quarter, YTD.\r\n\r\n**UX Priority:** Clean, un-cluttered interface suitable for presentation or quick review. Avoid data overload.\r\n",
+    "scope": "A high-level **Sales Manager Dashboard** focused on revenue tracking and team co",
+    "assumptions": [],
+    "openQuestions": []
+  },
+  "prd": {
+    "id": "e9b3b5c6-e524-4558-9eef-1861887eb7e8",
+    "title": "PRD: A high-level **Sales Manager Dashboard** focused on revenue tracking and team co",
+    "overview": "Product Requirements Document for: A high-level **Sales Manager Dashboard** focused on revenue tracking and team co\n\nContext: A high-level **Sales Manager Dashboard** focused on revenue tracking and team comparison.\r\n\r\n**Target Audience:** Sales Managers.\r\n**Primary Goal:** Monitor team performance trends and compare against other teams at a high level.\r\n\r\n**Key Features & Layout:**\r\n1.  **Executive Summary Cards (Top Row):**\r\n    *   Display critical KPIs for quick health checks.\r\n    *   **Metrics:** Total Revenue (YTD) and % Growth vs Last Year.\r\n    *   *Design:* Big, bold numbers with trend indicators (green/red arrows).\r\n\r\n2.  **Main Revenue Trend:**\r\n    *   **Visualization:** A clean, easy-to-read **Line Chart** showing revenue over time.\r\n    *   **Default View:** Year-to-Date (YTD).\r\n    *   *Interaction:* Simple tooltips on hover (no complex drill-down/click-through to reps).\r\n\r\n3.  **Global Filters (Sidebar or Top Bar):**\r\n    *   **Team Selector:** Dropdown to switch the view between different Sales Teams (e.g., \"Northeast Team\" vs \"Enterprise Team\"). *Single view approach.*\r\n    *   **Time Period:** Quick toggles for This Month, This Quarter, YTD.\r\n\r\n**UX Priority:** Clean, un-cluttered interface suitable for presentation or quick review. Avoid data overload.\r\n",
+    "requirements": [
+      {
+        "id": "1db58eec-2c3c-4ca1-a85b-09aa1ed97ac9",
+        "description": "Implement the core feature: A high-level **Sales Manager Dashboard** focused on revenue tracking and team co",
+        "priority": "must"
+      },
+      {
+        "id": "7b1467b7-b3b0-41e6-8f19-929736d52429",
+        "description": "Ensure responsive design across desktop and mobile",
+        "priority": "must"
+      },
+      {
+        "id": "bbb443b6-a85e-48b2-a1d5-c6bc0137da02",
+        "description": "Add smooth animations and visual polish",
+        "priority": "should"
+      },
+      {
+        "id": "91d52141-932c-4b7e-9c00-a7ab4248371e",
+        "description": "Include accessibility support",
+        "priority": "should"
+      }
+    ],
+    "acceptanceCriteria": [
+      "The feature \"A high-level **Sales Manager Dashboard** focused on revenue tracking and team co\" works as described",
+      "UI is responsive and visually polished",
+      "No console errors or warnings"
+    ],
+    "uiContract": {
+      "screens": []
+    }
+  },
+  "uiContract": {
+    "screens": [
+      {
+        "id": "abc68fc2-adeb-4a8b-b8f5-804823772dbe",
+        "name": "A high-level **Sales Manager Dashboard** focused on revenue tracking and team co",
+        "route": "/",
+        "components": [
+          {
+            "name": "FeatureComponent",
+            "props": {
+              "feature": "A high-level **Sales Manager Dashboard** focused on revenue tracking and team co"
+            },
+            "state": {}
+          }
+        ],
+        "description": "Main screen implementing: A high-level **Sales Manager Dashboard** focused on revenue tracking and team co"
+      }
+    ]
+  }
+}

@@ -73,15 +73,45 @@ export class V0Step implements PipelineStep {
  * Step 3: Antigravity adaptation — returns the run to the IDE for review.
  * In the future, this could call Antigravity APIs to auto-edit UI.
  */
+import * as fs from 'fs';
+import * as path from 'path';
+import { fileURLToPath } from 'url';
+import { IAntigravityAdapter } from "@meeting-to-demo/adapters";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
 export class AntigravityStep implements PipelineStep {
     name = "Antigravity: Prepare for IDE Review";
+    private adapter: IAntigravityAdapter;
+
+    constructor(adapter: IAntigravityAdapter) {
+        this.adapter = adapter;
+    }
 
     async execute(run: RunPacket): Promise<RunPacket> {
-        // For now, this step just marks the run as ready for review.
-        // In the future, this could invoke Antigravity IDE APIs.
+        if (!run.v0Output) {
+            throw new Error("No v0 output to adapt. Run V0 step first.");
+        }
+
+        console.log(`[AntigravityStep] Adapting prototype for run ${run.runId}...`);
+        const adaptedCode = await this.adapter.adaptPrototype(run.v0Output);
+
+        // Save to review directory
+        const reviewDir = path.resolve(__dirname, '../../../review');
+        if (!fs.existsSync(reviewDir)) {
+            fs.mkdirSync(reviewDir, { recursive: true });
+        }
+
+        const filename = `Ampliwork-${run.runId.substring(0, 8)}.tsx`;
+        const filePath = path.join(reviewDir, filename);
+
+        fs.writeFileSync(filePath, adaptedCode);
+        console.log(`[AntigravityStep] Saved adapted prototype to ${filePath}`);
+
         return {
             ...run,
-            adaptedOutput: `Ready for IDE review. v0 output: ${run.v0Output || 'none'}`,
+            adaptedOutput: filePath,
         };
     }
 }

@@ -16,17 +16,20 @@ import {
     IVercelAdapter,
     IAntigravityAdapter,
     IIntegrationAdapter,
+    IPromptRefinerAdapter,
     CirclebackMCPAdapter,
     ChatGPTAdapter,
     ChatPRDAdapter,
     ChatPRDMCPAdapter,
     V0MCPAdapter,
+    AntigravityAdapter,
     MockCirclebackAdapter,
     MockChatGPTAdapter,
     MockChatPRDAdapter,
     MockVercelAdapter,
     MockAntigravityAdapter,
     MockIntegrationAdapter,
+    MockPromptRefinerAdapter,
 } from "@meeting-to-demo/adapters";
 
 import { v4 as uuidv4 } from 'uuid';
@@ -60,6 +63,7 @@ export class OrchestratorService {
     private vercel: IVercelAdapter;
     private antigravity: IAntigravityAdapter;
     private integration: IIntegrationAdapter;
+    private promptRefiner: IPromptRefinerAdapter;
 
     constructor() {
         this.runManager = new RunManager();
@@ -129,8 +133,12 @@ export class OrchestratorService {
             console.log('[Orchestrator] Using mock v0 adapter');
         }
 
-        this.antigravity = new MockAntigravityAdapter();
+        this.antigravity = new AntigravityAdapter();
         this.integration = new MockIntegrationAdapter();
+
+        // Prompt Refiner — placeholder, user will swap with real AI adapter
+        this.promptRefiner = new MockPromptRefinerAdapter();
+        console.log('[Orchestrator] Using Mock Prompt Refiner (placeholder)');
     }
 
     async startRun(meetingId: string): Promise<RunPacket> {
@@ -197,6 +205,14 @@ export class OrchestratorService {
     }
 
     /**
+     * Refine a raw feature request using AI.
+     * May return clarifying questions; call again with answers to finalize.
+     */
+    async refinePrompt(rawRequest: string, previousAnswers?: Record<string, string>) {
+        return this.promptRefiner.refinePrompt(rawRequest, previousAnswers);
+    }
+
+    /**
      * Phase 1: Generate PRD via ChatPRD, then PAUSE for human review.
      * The PRD is returned so the user can see and modify it in Antigravity.
      * Call approvePRD(runId) to continue to v0.
@@ -229,8 +245,13 @@ export class OrchestratorService {
         const runner = new PipelineRunner();
         runner.addStep(new ChatPRDStep(this.chatPRD));
 
-        console.log('Phase 1: Generating PRD...');
+        console.log(`Phase 1: Generating PRD for Run ${initialRun.runId}...`);
+
+        const startTime = Date.now();
         const afterPRD = await runner.run(initialRun);
+        const duration = ((Date.now() - startTime) / 1000).toFixed(1);
+
+        console.log(`Phase 1: ChatPRD finished in ${duration}s.`);
 
         // PAUSE — mark as awaiting review
         afterPRD.status = 'awaiting_prd_review';
@@ -256,10 +277,15 @@ export class OrchestratorService {
         run.status = 'in-progress';
         const runner = new PipelineRunner();
         runner.addStep(new V0Step(this.vercel));
-        runner.addStep(new AntigravityStep());
+        runner.addStep(new AntigravityStep(this.antigravity));
 
-        console.log(`Phase 2: Sending approved PRD to v0...`);
+        console.log(`Phase 2: [1/2] Generating v0 Prototype via API...`);
+        const startTime = Date.now();
         const result = await runner.run(run);
+        const duration = ((Date.now() - startTime) / 1000).toFixed(1);
+
+        console.log(`Phase 2: [2/2] Antigravity Refinement Handshake complete.`);
+        console.log(`Phase 2: v0 + Antigravity total duration: ${duration}s.`);
         await this.runManager.saveRun(result);
 
         console.log(`Pipeline complete. Run ${result.runId} finished.`);
